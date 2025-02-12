@@ -19,3 +19,19 @@
     height: 75px;
     border-radius: 100px;
 }
+
+#mario {
+    background-color: red;
+}
+
+#luigi {
+    background-color: darkgreen;
+}
+
+#peach {
+    background-color: pink;
+}
+
+#yoshi {
+    background-color: yellow;
+}

@@ -45,12 +45,16 @@ li {
 }
 
 .icon {
-    text-align: center;
-    display: inline;
     /* Color white, for svg's this is the way, using color: white doesn't work */
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(321deg) brightness(103%) contrast(101%);
     width: 20px;
     height: 20px;
+}
+
+.large-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(321deg) brightness(103%) contrast(101%);
+    width: 40px;
+    height: 40px;
 }
 
 .mini-profile {
@@ -90,5 +94,8 @@ li {
 }
 
 #dashboard-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     place-self: center;
 }

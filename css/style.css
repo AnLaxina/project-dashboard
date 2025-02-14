@@ -4,7 +4,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 300px repeat(3, 1fr);
+    grid-template-columns: 275px repeat(3, 1fr);
     grid-template-areas:
         "sidebar header header header"
         "sidebar main main main";
@@ -57,6 +57,16 @@ input[type="search"] {
     padding: 16px;
 }
 
+button {
+    background-color: #2596be;
+    border-radius: 50px;
+    border-style: none;
+    height: 45px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+}
+
 .sidebar {
     grid-area: sidebar;
 
@@ -107,8 +117,23 @@ input[type="search"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
 }
+
+.upper-header {
+    padding: 8px;
+}
+
+.lower-header {
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+
 
 .profile-name {
     display: flex;
@@ -130,6 +155,16 @@ input[type="search"] {
 
 .trending {
     grid-area: trending;
+}
+
+.message {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.cool-message>* {
+    margin: 4px;
 }
 
 #mario {

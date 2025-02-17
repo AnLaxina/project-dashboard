@@ -180,7 +180,8 @@ button {
 }
 
 .project-card p,
-.announcement p {
+.announcement p,
+.user p {
     color: #656363;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -192,7 +193,8 @@ button {
 
 }
 
-.announcement-messages {
+.announcement-messages,
+.users {
     background-color: #ffffff;
     padding: 16px;
     border-radius: 25px;
@@ -200,7 +202,8 @@ button {
 }
 
 /* Selects all the announcement cards except for the last child */
-.announcement:not(:last-child) {
+.announcement:not(:last-child),
+.user:not(:last-child) {
     border-bottom: solid 1px grey;
 }
 
@@ -217,6 +220,18 @@ button {
 .cool-message>* {
     margin: 4px;
 }
+
+.users {
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 #mario {
     background-color: red;
